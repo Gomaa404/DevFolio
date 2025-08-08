@@ -7,7 +7,7 @@
   margin: 0;
 }
 :root {
-  --main-color: var(--main-color, #0078ff);
+  --main-color: #0078ff;
 }
 
 html {
