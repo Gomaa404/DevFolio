@@ -1,0 +1,704 @@
+/*==================== start main rule=========================== */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color: var(--main-color, #0078ff);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+div img {
+  width: 100%;
+  display: block;
+}
+
+/*==================== end main rule=========================== */
+
+/* main rule */
+
+/* start nav */
+
+.navbar {
+  background-color: #000000e5 !important;
+}
+.navbar li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #eee;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+}
+.navbar li a:hover::after,
+body:not(:has(:target)) .navbar ul li a[href="#Home"]::after,
+body:has(#Home:target) .navbar ul li a[href="#Home"]::after,
+body:has(#About:target) .navbar ul li a[href="#About"]::after,
+body:has(#Services:target) .navbar ul li a[href="#Services"]::after,
+body:has(#Work:target) .navbar ul li a[href="#Work"]::after,
+body:has(#Blog:target) .navbar ul li a[href="#Blog"]::after,
+body:has(#Dropdown:target) .navbar ul li a[href="#Dropdown"]::after,
+body:has(#content:target) .navbar ul li a[href="#content"]::after {
+  width: 80%;
+  transition: width 0.3s ease;
+}
+
+/* end  nav */
+
+/* start header  */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+header .content-header p::after {
+  content: "";
+  width: 3px;
+  height: 25px;
+  background-color: #eee;
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  animation: SHADOW 15s infinite;
+}
+@keyframes SHADOW {
+  /* ===== Designer===== */
+  7% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0;
+  }
+  9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  13% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  /* ===== Developer===== */
+  27% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0;
+  }
+  29% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+
+  /* ===== Freelancer ===== */
+  52% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  56% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  /* ===== Photographer===== */
+  81% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 0;
+  }
+  87% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+header .content-header p {
+  height: 32px;
+}
+header .content-header p::before {
+  content: "";
+  animation: CHANGES 15s infinite;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+@keyframes CHANGES {
+  /* ===== Designer===== */
+  0% {
+    content: "D";
+  }
+  1% {
+    content: "De";
+  }
+  2% {
+    content: "Des";
+  }
+  3% {
+    content: "Desi";
+  }
+  4% {
+    content: "Desig";
+  }
+  5% {
+    content: "Design";
+  }
+  6% {
+    content: "Designe";
+  }
+  7% {
+    content: "Designer";
+  }
+  15% {
+    content: "Designer";
+  }
+  16% {
+    content: "Designe";
+  }
+  17% {
+    content: "Design";
+  }
+  18% {
+    content: "Desig";
+  }
+  19% {
+    content: "Desi";
+  }
+  20% {
+    content: "Des";
+  }
+  21% {
+    content: "De";
+  }
+
+  /* ===== Developer ===== */
+  22% {
+    content: "Dev";
+  }
+  23% {
+    content: "Deve";
+  }
+  24% {
+    content: "Devel";
+  }
+  25% {
+    content: "Develo";
+  }
+  26% {
+    content: "Develop";
+  }
+  26.5% {
+    content: "Develope";
+  }
+  27% {
+    content: "Developer";
+  }
+  35% {
+    content: "Developer";
+  }
+  36% {
+    content: "Develope";
+  }
+  37% {
+    content: "Develop";
+  }
+  38% {
+    content: "Develo";
+  }
+  39% {
+    content: "Devel";
+  }
+  40% {
+    content: "Deve";
+  }
+  41% {
+    content: "Dev";
+  }
+  42% {
+    content: "De";
+  }
+  43% {
+    content: "";
+  }
+
+  /* ===== Freelancer===== */
+  44% {
+    content: "F";
+  }
+  45% {
+    content: "Fr";
+  }
+  46% {
+    content: "Fre";
+  }
+  47% {
+    content: "Free";
+  }
+  48% {
+    content: "Freel";
+  }
+  49% {
+    content: "Freela";
+  }
+  50% {
+    content: "Freelan";
+  }
+  51% {
+    content: "Freelanc";
+  }
+  51.5% {
+    content: "Freelance";
+  }
+  52% {
+    content: "Freelancer";
+  }
+  60% {
+    content: "Freelancer";
+  }
+  61% {
+    content: "Freelance";
+  }
+  62% {
+    content: "Freelanc";
+  }
+  63% {
+    content: "Freelan";
+  }
+  64% {
+    content: "Freela";
+  }
+  65% {
+    content: "Freel";
+  }
+  66% {
+    content: "Free";
+  }
+  67% {
+    content: "Fre";
+  }
+  68% {
+    content: "Fr";
+  }
+  69% {
+    content: "";
+  }
+
+  /* ===== Photographer: 72.1% → 100% ===== */
+  70% {
+    content: "P";
+  }
+  71% {
+    content: "Ph";
+  }
+  72% {
+    content: "Pho";
+  }
+  73% {
+    content: "Phot";
+  }
+  74% {
+    content: "Photo";
+  }
+  75% {
+    content: "Photog";
+  }
+  76% {
+    content: "Photogr";
+  }
+  77% {
+    content: "Photogra";
+  }
+  78% {
+    content: "Photograp";
+  }
+  79% {
+    content: "Photograph";
+  }
+  80% {
+    content: "Photographe";
+  }
+  81% {
+    content: "Photographer";
+  }
+  90% {
+    content: "Photographer";
+  }
+  91% {
+    content: "Photographe";
+  }
+  92% {
+    content: "Photograph";
+  }
+  93% {
+    content: "Photograp";
+  }
+  94% {
+    content: "Photogra";
+  }
+  95% {
+    content: "Photogr";
+  }
+  96% {
+    content: "Photog";
+  }
+  97% {
+    content: "Photo";
+  }
+  98% {
+    content: "Phot";
+  }
+  98.5% {
+    content: "Pho";
+  }
+  99% {
+    content: "Ph";
+  }
+  99.5% {
+    content: "P";
+  }
+  100% {
+    content: "";
+  }
+}
+
+/* end  header */
+
+/* start section one */
+
+.About .card {
+  border: none;
+  box-shadow: 0 0 2px 1px rgb(0 0 0 / 17%);
+}
+
+.skill ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  background-color: #cde1f8;
+  top: 50%;
+  left: 0;
+}
+.skill ul li::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  background-color: var(--main-color, #0078ff);
+  top: 50%;
+  left: 0;
+}
+.skill ul li.HTML::after {
+  width: 85%;
+}
+.skill ul li.CSS::after {
+  width: 75%;
+}
+.skill ul li.php::after {
+  width: 50%;
+}
+.skill ul li.JavaScript::after {
+  width: 90%;
+}
+
+.About .about-me h5::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background-color: var(--main-color, #0078ff);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+/* end section one */
+/* start section two */
+.Services .title-section p::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: var(--main-color, #0078ff);
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.Services .content-section .card {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.Services .content-section .card .ic {
+  width: 130px;
+  height: 130px;
+  border: 10px solid var(--main-color, #0078ff);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.Services .content-section .card .ic:hover {
+  border-color: #cde1f8;
+  background-color: var(--main-color, #0078ff);
+  color: #eee;
+}
+/* end section two */
+/* start section three */
+
+.calc-section {
+  background-image: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 120, 255, 0.7)),
+    url("../img/counters-bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-block: 100px;
+}
+
+.calc-section .icon {
+  height: 70px;
+  width: 70px;
+  border: 8px solid #cde1f8;
+}
+.calc-section .icon svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+/* end section tthree */
+/* start section four */
+.portfolio .title-section p::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: var(--main-color, #0078ff);
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.portfolio .image img {
+  transition: 0.5s ease;
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.portfolio .image img:hover {
+  transition: transform 0.8s ease;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -webkit-transition: transform 0.8s ease;
+  -moz-transition: transform 0.8s ease;
+  -ms-transition: transform 0.8s ease;
+  -o-transition: transform 0.8s ease;
+}
+.portfolio .text-link span {
+  font-size: 12.8px;
+}
+
+/* end section four */
+/* start section five */
+.indicators {
+  background-image: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 120, 255, 0.7)),
+    url("../img/overlay-bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-block: 90px;
+}
+.indicators button {
+  width: 13px !important;
+  height: 13px !important;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* end section five */
+/* start section six */
+.blog .title-section p::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: var(--main-color, #0078ff);
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.blog .card-body .move {
+  font-size: 14px;
+  padding: 4px 12px;
+  top: -15px;
+  left: 50%;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+.blog .card-body .img-text .card-link:hover {
+  color: var(--main-color, #0078ff) !important;
+}
+.blog .card-title:hover {
+  color: var(--main-color, #0078ff) !important;
+}
+/* end section six */
+/* start section seven */
+footer,
+.contact {
+  background-image: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 120, 255, 0.7)),
+    url("../img/overlay-bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-block: 130px 10px;
+}
+.contact h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #0062d3;
+}
+/* end section seven */
+/* start footer */
+footer {
+  box-shadow: rgb(8, 116, 231) 0px 20px 30px -10px;
+}
+.s2t {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 20px;
+}
+.s2t svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+/* end footer */
